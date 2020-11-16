@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
+
+:root {
+  --bg-size: 100% 100%;
+  --main_color: #fff;
+  --title: "Josefin Sans", sans-serif;
+  --font-para: "David Libre", serif;
+  --btn-color: #bbe1fa;
+  --btn-font-color: #000;
+  --btn-font: 1.5rem;
+  --eff: 0.3s all ease;
+  --poppins: "Poppins", sans-serif;
+}
+
+/*footer icons*/
+.fab {
+  color: rgb(255, 255, 255);
+}
+
+.fab:hover {
+  color: #258dfd;
+  transform: rotate(360deg);
+}
+footer h2 {
+  font-weight: 700;
+}
+
+.air img,
+.fab {
+  transition: var(--eff);
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* #header */
+#header {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  box-sizing: border-box;
+  background: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(" https://i.postimg.cc/GpRFBmmF/bg4.jpg");
+  /* https://i.postimg.cc/GpRFBmmF/bg4.jpg
+    https://i.postimg.cc/QMZbpq0W/bg3.jpg
+    https://i.postimg.cc/tgg67Ff9/bg1.jpg
+    https://i.postimg.cc/YqVf5nyQ/bg2.jpg */
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+#header .content {
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+  font-family: var(--poppins);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+#header .content .welcome h2 {
+  padding: 0;
+  color: white;
+  font-size: 4em;
+  margin-bottom: 5px;
+  z-index: 5;
+}
+#header .content .typed {
+  padding: 0;
+  color: white;
+  font-size: 5em;
+  margin-top: 5px;
+  z-index: 5;
+}
+#header .content .typed span {
+  color: chartreuse;
+  z-index: 2;
+}
+#header .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+
+/* @media screen and (max-width:768px){
+   
+} */
