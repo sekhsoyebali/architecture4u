@@ -60,24 +60,26 @@
     </nav>
 
     <div class="container">
-        <form class="contact-form" method="POST" onsubmit="return check();">
-
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name.." required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email.." required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"
-                required></textarea>
-
-            <button class="submit-btn" onclick="send(event)">Submit</button>
-
+        <form class="gform" action="https://script.google.com/macros/s/AKfycbx7KbICEuQsYfIXRQ_kl0k8m8eGlyfl9biBvFdyUA/exec" method="post" >
+            <div class="form-elements">
+                <font size="3">Name: </font><br>
+                <input type="text" placeholder="Your Name..." size="50" maxlength="200" name="name" required>
+                <br><br>
+                <font size="3">Email Id:</font><br>
+                <input type="text" placeholder="Your Email..." size="50" maxlength="200" name="email" required>
+                <br><br>
+                <font size="3">Message: </font><br>
+                <textarea cols="50" rows="10" placeholder="Message" name="message" required></textarea><br><br>
+                <button class="button-success pure-button button-xlarge submit-btn">
+                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+            </div>
+            <div class="thankyou_message" style="display:none;">
+                <h3><em>Thanks</em> for contacting us!</h3>
+                <h3>
+                    We will get back to you soon!</h3>
+            </div>
         </form>
     </div>
-
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -126,8 +128,7 @@
     </footer>
     <!-- Footer -->
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/contact.js"></script>
+    <script data-cfasync="false" src="js/contact.js"></script>
 
 </body>
 
