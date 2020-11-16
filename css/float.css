@@ -90,7 +90,7 @@ img.card-img-top:hover {
 /* The Close Button */
 .close {
   position: absolute;
-  top: 60px;
+  top: 75px;
   right: 50px;
   color: #f1f1f1;
   font-size: 40px;
@@ -111,7 +111,7 @@ img.card-img-top:hover {
   }
   .close {
     position: absolute;
-    top: 55px;
+    top: 65px;
     right: 5px;
   }
 }
