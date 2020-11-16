@@ -17,7 +17,8 @@
     <title>Contact - Ms</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"> 
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
 </head>
 
@@ -25,7 +26,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
-             <a class="navbar-brand font-weight-bold" href="/"><img src="img/logo.png" style="width: 50px; filter: brightness(100%);" alt=""></a>
+            <a class="navbar-brand font-weight-bold" href="/"><img src="img/logo.png"
+                    style="width: 50px; filter: brightness(100%);" alt=""></a>
             <a class="navbar-brand" href="/">Mandeep</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,11 +59,24 @@
         </div>
     </nav>
 
-    <div style="width: 100%;height: 60vh;">
-        <h1>
-            hello world
-        </h1>
-    </div>
+    <div class="container">
+        <form action="contact.php" >
+      
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name.." required>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email.." required>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
