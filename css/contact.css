@@ -1,38 +1,40 @@
-form{
-    margin-top: 20px;
-    margin-bottom: 40px;
+form {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-form label{
-    font-family: sans-serif;
-    font-size: 1.5em;
-    font-weight: 600;
+form label {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 /* Style inputs with type="text", select elements and textareas */
-form input[type=text], form input[type=email], form select, form textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  form input[type=submit] {
-      font-size: 20px;
-      font-weight: 600;
-    background-color: #FF7701;
-    color: white;
-    padding: 8px 24px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  form input[type=submit]:hover {
-    background-color: #e66e06;
-  }
-  
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+form .submit-btn {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ff7701;
+  color: white;
+  padding: 6px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+form .submit-btn:hover {
+  background-color: #e66e06;
+}
