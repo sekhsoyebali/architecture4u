@@ -60,7 +60,7 @@
     </nav>
 
     <div class="container">
-        <form action="contact.php" method="POST">
+        <form class="contact-form" method="POST" onsubmit="return check();>
 
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name.." required>
@@ -72,7 +72,7 @@
             <textarea id="message" name="message" placeholder="Write something.." style="height:200px"
                 required></textarea>
 
-            <button class="submit-btn">Submit</button>
+            <button class="submit-btn" onclick="send(event)">Submit</button>
 
         </form>
     </div>
@@ -125,6 +125,9 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/contact.js"></script>
 
 </body>
 
